@@ -1,0 +1,123 @@
+.list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  min-height: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.item:hover {
+  background: #374151;
+}
+
+.active {
+  background: #374151;
+  outline: 2px solid #3b82f6;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.nameRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #f9fafb;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.online {
+  background: #166534;
+  color: #dcfce7;
+}
+
+.offline {
+  background: #374151;
+  color: #9ca3af;
+}
+
+.away {
+  background: #854d0e;
+  color: #fef9c3;
+}
+
+.lastMessage {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #9ca3af;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addButton {
+  display: block;
+  width: calc(100% - 16px);
+  margin: 8px;
+  padding: 10px;
+  border: 2px dashed #4b5563;
+  border-radius: 10px;
+  background: #1f2937;
+  color: #9ca3af;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.addButton:hover {
+  border-color: #3b82f6;
+  color: #60a5fa;
+}
+
+.empty {
+  margin: 24px 8px 12px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+}
